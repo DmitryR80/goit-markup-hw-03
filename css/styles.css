@@ -19,7 +19,7 @@ ul {
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
-}
+   }
 
 a {
     text-decoration: none;
@@ -34,7 +34,7 @@ a {
  }
 
  .container {
-  max-width: 1166px;
+  max-width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -43,34 +43,22 @@ a {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
-   }
-
-   .logo-wrap {
-    padding-top: 25,5px;
-    padding-bottom: 25,5px;
-    padding-left: 156px;
-   }
-
-   .nav-wrap{
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 347px;
-   }
-
-   .link-wrap {
-    padding-left: 940px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-   }
-
-   .tel-wrap {
-    padding-top: 24px;
-        padding-bottom: 24px;
-        padding-left: 1133px;
+    
    }
    
+  .header-container{
+ display: flex;
+ align-items: center;
+  } 
+
 .header-nav {
 color: #2e2f42;
+display: flex;
+align-items: center;
+flex-grow: 1;
+justify-content: space-between;
+margin-left: 156px;
+
 }
 
 .header-logo {
@@ -82,16 +70,20 @@ color: #2e2f42;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    align-items: center;
 }
 
 .header-logo-part {
-    color: #2e2f42;
-    
+color: #2e2f42;
 }
 
 .header-address-list {
  color: #2e2f42 ;
-}
+ display: flex;
+ align-items: center;
+ gap: 40px;
+ 
+ }
 
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -103,10 +95,12 @@ font-size: 16px;
 line-height: 150%;
 letter-spacing: 0.02em;
 color: #2e2f42;
-}
+ }
 
-.header-address-title {
+.header-address {
 font-style: normal;
+display: flex;
+gap: 40px;
 }
 
 .header-address-item {
@@ -137,6 +131,8 @@ background: #2e2f42;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .hero-button {
@@ -146,7 +142,11 @@ background: #2e2f42;
     letter-spacing: 0.04em;
     color: #ffffff;
     background: #4d5ae5;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 16px 32px;
+    margin ;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -157,7 +157,10 @@ background: #2e2f42;
 
 }
 
-.features-list {}
+.features-list {
+    display: flex;
+    align-items: center;
+}
 
 .features-item {}
 
@@ -188,10 +191,13 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 text-transform: capitalize;
+
 }
 
 .team-list {
     background: #f4f4fd;
+    display: flex;
+
 }
 
 .team-item {
@@ -230,7 +236,10 @@ color: #434455;
     text-transform: capitalize;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    align-items: center;
+}
 
 .portfolio-item {}
 
