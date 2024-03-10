@@ -1,7 +1,8 @@
 .body {
     font-family:'Roboto', sans-serif;
     color: #434455;
-    background-color: #FFFFFF;}
+    background-color: #FFFFFF;
+}
     
     h1,
     h2,
@@ -25,20 +26,30 @@ a {
     text-decoration: none;
     color: currentColor;
 }
- button{
+ button {
   cursor: pointer;
  }
 
- address{
+ address {
     font-style: normal;
  }
 
+ img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
+ address {
+    font-style: normal;
+  }
+
  .container {
-  max-width: 1158px;
+  max-width: 1128px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
- }
+   }
 
 .header {
     padding-top: 24px;
@@ -46,18 +57,18 @@ a {
     
    }
    
-  .header-container{
- display: flex;
- align-items: center;
+.header-container {
+    display: flex;
+   
   } 
 
 .header-nav {
-color: #2e2f42;
-display: flex;
-align-items: center;
-flex-grow: 1;
-justify-content: space-between;
-margin-left: 156px;
+   color: #2e2f42;
+   display: flex;
+   align-items: center;
+   flex-grow: 1;
+   justify-content: space-between;
+   margin-left: 156px;
 
 }
 
@@ -74,14 +85,14 @@ margin-left: 156px;
 }
 
 .header-logo-part {
-color: #2e2f42;
+   color: #2e2f42;
 }
 
 .header-address-list {
- color: #2e2f42 ;
- display: flex;
- align-items: center;
- gap: 40px;
+  color: #2e2f42 ;
+  display: flex;
+  align-items: center;
+  gap: 40px;
  
  }
 
@@ -90,28 +101,28 @@ color: #2e2f42;
     color: #404bbf;
 }
 .header-nav-link {
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
  }
 
 .header-address {
-font-style: normal;
-display: flex;
-gap: 40px;
+  font-style: normal;
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-item {
-color: #2e2f42;
+  color: #2e2f42;
 }
 
 .header-address-link {
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #434455;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .header-address-link:hover,
@@ -120,7 +131,7 @@ color: #434455;
 }
 
 .hero {
-background: #2e2f42;
+  background: #2e2f42;
 }
 
 .hero-title {
@@ -145,9 +156,9 @@ background: #2e2f42;
     cursor: pointer;
     border-radius: 4px;
     border: none;
-    padding: 16px 32px;
-    margin ;
+    padding: 16px 32px;  
 }
+
 .hero-button:hover,
 .hero-button:focus {
     background: #404bbf;
@@ -162,35 +173,37 @@ background: #2e2f42;
     align-items: center;
 }
 
-.features-item {}
+.features-item {
+  width: calc((100% - 3 * 24px ) / 4 );
+}
 
 .features-subtitle {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .features-item-text {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .team {
-background: #f4f4fd;
+  background: #f4f4fd;
 }
 
 .team-title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
-text-transform: capitalize;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
 
 }
 
@@ -207,21 +220,21 @@ text-transform: capitalize;
 .team-img {}
 
 .team-subtitle {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 
 .team-text {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-align: center;
-color: #434455;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
 }
 
 .portfolio {}
@@ -239,6 +252,10 @@ color: #434455;
 .portfolio-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    
 }
 
 .portfolio-item {}
