@@ -4,11 +4,10 @@
     background-color: #FFFFFF;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
+
 
     h1,
     h2,
@@ -80,15 +79,13 @@ a {
   
 }
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
+   align-items: center;
+  justify-content: space-between;  
 }
    
  .header-container {
     display: flex;
+    justify-content: space-between;
    
   } 
 
@@ -96,10 +93,10 @@ a {
    color: #2e2f42;
    display: flex;
    align-items: center;
-   flex-grow: 1;
+   flex-grow: 0;
    justify-content: space-between;
    margin-left: 156px;
-
+   
 }
 
 .header-logo {
@@ -111,10 +108,8 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    align-items: start;
-   justify-self: start;
-  
-
+  align-items: start;
+    justify-self: start;
 }
 
 .header-logo-part {
@@ -126,7 +121,10 @@ a {
   display: flex;
   align-items: start;
   gap: 40px;
-  flex-wrap: wrap;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 76px; 
  }
 
 .header-nav-link:hover,
@@ -138,13 +136,21 @@ a {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: #2e2f42;  
  }
+
+ .header-address-title{
+  display: flex;
+  gap: 40px;
+  margin-right: 156px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+}
 
 .header-address {
   font-style: normal;
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 .header-address-item {
@@ -156,6 +162,7 @@ a {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  
 }
 
 .header-address-link:hover,
@@ -169,7 +176,8 @@ a {
 
 .hero-wrap{
   background: #2e2f42;
-  padding: 188px 292px ;
+  padding: 188px 472px 292px 472px ;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -198,18 +206,22 @@ a {
 }
 
 .features {
+  min-width: 1128px;
+  margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
  
 }
 
 .features-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  gap: 24px;
+  
 }
 
 .features-item {
-  width: calc((100% - 3 * 24px ) / 4 );
+  width: calc((100% - 3 * 24px) / 4);
+  margin: 0 auto;
 }
 
 .features-subtitle {
@@ -218,6 +230,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .features-item-text {
   font-weight: 400;
@@ -225,12 +238,34 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  
 }
 
 .team {
-  background: #f4f4fd;
+  
 }
+.team-wrap {
+background: #f4f4fd;
+max-width:px; 
 
+}
+.blok {
+  
+  
+
+}
+ .first {
+
+ }
+ .second {
+
+ }
+ .third {
+
+ }
+ .fourth {
+
+ }
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -239,12 +274,17 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
 
 }
 
 .team-list {
     background: #f4f4fd;
     display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+    
 
 }
 
@@ -272,7 +312,10 @@ a {
   color: #434455;
 }
 
-.portfolio {}
+.portfolio {
+  min-width: 1128px;
+  margin: 0 auto;
+}
 
 .portfolio-title {
     font-weight: 700;
@@ -282,6 +325,9 @@ a {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
+    min-width: 218px;
 }
 
 .portfolio-list {
@@ -290,6 +336,7 @@ a {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    justify-content: center;
     
 }
 
@@ -320,7 +367,11 @@ margin: 32px 16px;
 }
 
 .footer {
-    background: #2e2f42;
+    
+}
+.footer-wrap {
+background: #2e2f42;
+padding: 100px 1020px 100px 156px;
 }
 
 .footer-logo {
@@ -351,4 +402,6 @@ margin: 32px 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    padding-top: 16px;
+    max-width: 264px;
 }
