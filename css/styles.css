@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
     h1,
     h2,
     h3,
@@ -69,15 +68,6 @@ a {
   border: 2px dashed #2a2a2a;
  }
 
-
-.features,
-.portfolio {
-  max-width: 1128px;
-    padding-left: 156px;
-    padding-right: 156px;
-    margin: 0 auto;
-  
-}
 .header {
    align-items: center;
   justify-content: space-between;  
@@ -86,7 +76,6 @@ a {
  .header-container {
     display: flex;
     justify-content: space-between;
-   
   } 
 
 .header-nav {
@@ -108,7 +97,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-  align-items: start;
+    align-items: start;
     justify-self: start;
 }
 
@@ -176,8 +165,13 @@ a {
 
 .hero-wrap{
   background: #2e2f42;
-  padding: 188px 472px 292px 472px ;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding-top: 188px;
+  padding-bottom: 292px;
   margin: 0 auto;
+ 
 }
 
 .hero-title {
@@ -189,11 +183,10 @@ a {
     text-align: center;
     color: #fff;
     display: flex;
-    align-items: center;
-    margin-bottom: 48px;
-    max-width: 496px;
-       
-}
+      align-items: center;
+      max-width: 496px;
+      margin-bottom: 48px;
+    }
 
 .hero-button {
  margin-left: 164px; 
@@ -244,28 +237,14 @@ a {
 .team {
   
 }
+
+
 .team-wrap {
 background: #f4f4fd;
-max-width:px; 
+
 
 }
-.blok {
-  
-  
-
-}
- .first {
-
- }
- .second {
-
- }
- .third {
-
- }
- .fourth {
-
- }
+ 
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -276,23 +255,26 @@ max-width:px;
   text-transform: capitalize;
   padding-top: 120px;
   padding-bottom: 72px;
-
 }
 
 .team-list {
     background: #f4f4fd;
     display: flex;
-    justify-content: center;
-    padding-bottom: 120px;
-    
-
+    gap: 32px; 
+    padding-bottom: 127px;
 }
 
 .team-item {
-    background-color: #FFFFFF;
+ background-color: #FFFFFF;
+ width: calc((100% - 3 * 24px) / 4);
+ padding: 32px 16px;
 }
 
-.team-img {}
+.team-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
 
 .team-subtitle {
   font-weight: 500;
@@ -301,6 +283,7 @@ max-width:px;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+
 }
 
 .team-text {
@@ -337,6 +320,7 @@ max-width:px;
     column-gap: 24px;
     row-gap: 48px;
     justify-content: center;
+    padding-bottom: 120px;
     
 }
 
