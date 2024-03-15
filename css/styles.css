@@ -202,14 +202,15 @@ a {
   min-width: 1128px;
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 120px;
- 
+  padding-bottom: 127px;
+  
 }
 
 .features-list {
   display: flex;
   gap: 24px;
-  
+  padding-right: 156px;
+  padding-left: 156px;  
 }
 
 .features-item {
@@ -326,9 +327,9 @@ background: #f4f4fd;
 
 .portfolio-item {}
 
-.portfolio-img {
-   
-}
+.portfolio-img {}
+
+
 .portfolio-card {
 margin: 32px 16px;
 }
