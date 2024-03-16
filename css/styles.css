@@ -69,9 +69,13 @@ a {
  }
 
 .header {
-   align-items: center;
-  justify-content: space-between;  
-}
+  max-width: 1158px;
+  align-items: center;
+  justify-content: space-between; 
+  border-bottom: 1px solid #e7e9fc
+  padding-right: 15px;
+  padding-left: 15px;
+  }
    
  .header-container {
     display: flex;
@@ -99,6 +103,7 @@ a {
     color: #4d5ae5;
     align-items: start;
     justify-self: start;
+    margin-right: 76px;
 }
 
 .header-logo-part {
@@ -113,7 +118,7 @@ a {
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-left: 76px; 
+   
  }
 
 .header-nav-link:hover,
