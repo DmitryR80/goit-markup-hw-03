@@ -85,8 +85,8 @@ img {
   align-items: center;
   justify-content: space-between; 
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
+ //* padding-top: 24px;
+  padding-bottom: 24px; *//
 }
    
  .header-container {
@@ -134,8 +134,8 @@ img {
   display: flex;
   align-items: start;
   gap: 40px; 
-  padding-top: 24px;
-  padding-bottom: 24px; 
+  //*padding-top: 24px;
+  padding-bottom: 24px; *//
  }
 
 .header-nav-link:hover,
@@ -149,6 +149,8 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #2e2f42;  
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
  .header-address-title{
@@ -159,9 +161,11 @@ img {
 }
 
 .header-address {
-  font-style: normal;
-  display: flex;
-  gap: 40px;
+font-style: normal;
+display: flex;
+gap: 40px;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .header-address-item {
