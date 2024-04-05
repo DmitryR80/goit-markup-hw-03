@@ -1,3 +1,8 @@
+img {
+
+  display: block;
+
+}
 .body {
     font-family:'Roboto', sans-serif;
     color: #434455;
@@ -32,9 +37,7 @@ a {
     color: currentColor;
 }
 
-img {
-  display: block;
-}
+
 
 button {
     font-weight: 500;
