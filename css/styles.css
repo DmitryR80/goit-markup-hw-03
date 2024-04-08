@@ -368,9 +368,7 @@ padding-bottom: 24px;
 }
 
 .portfolio-card {
-padding-top: 32px;
-padding-bottom: 32px;
-padding-left: 19px;
+padding: 16px 32px;
 border: 1px solid #e7e9fc;
 border-top : none;
 }
